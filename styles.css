@@ -236,6 +236,28 @@ body {
     font-size: 1.1rem;
 }
 
+.btn-standout {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%) !important;
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+    transform: scale(1.05);
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+.btn-standout:hover {
+    background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%) !important;
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 107, 53, 0.6);
+}
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+    }
+    100% {
+        box-shadow: 0 8px 35px rgba(255, 107, 53, 0.7);
+    }
+}
+
 .hero-image {
     display: flex;
     justify-content: center;
